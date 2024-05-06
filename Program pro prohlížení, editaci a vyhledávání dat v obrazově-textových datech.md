@@ -1,10 +1,15 @@
 ---
 toc: "true"
 ---
+# Definice pojmů
+---
+- Soubor rejstříku
+	- Textový soubor, který obsahuje výčet kapitol a na kterých stránkách kapitoly začínají. Definován jeden v rámci jedné poddatabáze. Nelze předefinovat v aplikaci, pouze externě přepsáním JSON souboru.
+- Vyhledávání
+	- Proces porovnávání dvou textových řetězců a zobrazování v případě shody.
 # Načítání dat
 ---
 ## Struktura dat 
-
 ![[JSONimg.png]]
 POZOR: Informace za pomlčkami jsou pouze informativní a nesmí být součástí JSON souboru.
 
@@ -17,26 +22,26 @@ V případě, že má soubor správnou strukturu, budou ve výpisovém okně inf
 ![[PDO_im2.png]]
 Pokud je v okně "Database Error", budete muset vytvořit nový JSON soubor tak, aby vyhovoval [[##Struktura dat|Struktuře dat]].
 ### Načtení dat při běhu aplikace
-Pro načtení dat můžete využít tlačítka Import dat nebo klávesovou zkratku definovanou v  [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + D.
+Pro načtení dat můžete využít tlačítka Import dat nebo klávesovou zkratku definovanou v  [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + D.
 ![[PDO_load_db.png]]
 POZOR: V případě, že má soubor špatnou strukturu, nenačte se.
 # Prohlížení
 ---
 ## Prohlížení záznamů
-Pro přesun mezi záznamy můžete využít tlačítek Předchozí záznam a Následující záznam nebo klávesových zkratek definovaných v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Levá šipka a Ctrl + Pravá šipka.
+Pro přesun mezi záznamy můžete využít tlačítek Předchozí záznam a Následující záznam nebo klávesových zkratek definovaných v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Levá šipka a Ctrl + Pravá šipka.
 ## Prohlížení rejstříkem
 Pro přesun mezi záznamy můžete využít rejstříku, který je generován na základě [[#Struktura dat|Načítaných dat]]. Zde se po vybrání databáze zobrazí výčet kapitol. 
 ![[PDO_Rejstrik.png]]
-Okno s rejstříkem můžete otevřít stisknutím tlačítka Rejstřík v hlavním okně, nebo klávesovou zkratkou definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl+N.
+Okno s rejstříkem můžete otevřít stisknutím tlačítka Rejstřík v hlavním okně, nebo klávesovou zkratkou definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + N.
 ![[PDO_rejst_main.png]]
 # Editace
 ---
 ## Editace textu
-Pro editaci textu přepište text v hlavním okně a pomocí klávesové zkratky definované v [[#Nastavení]] aplikace změnu uložte. Obvykle se jedná o Ctrl + S.
+Pro editaci textu přepište text v hlavním okně a pomocí klávesové zkratky definované v [[#Nastavení]] aplikace změnu uložte. Obvykle se jedná o Ctrl + S.
 
-Pro vrácení textu do stavu před editací, stiskněte klávesovou zkratku definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Z.
+Pro vrácení textu do stavu před editací, stiskněte klávesovou zkratku definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Z.
 
-Pro vrácení textu do stavu po editací, stiskněte klávesovou zkratku definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Y.
+Pro vrácení textu do stavu po editací, stiskněte klávesovou zkratku definovanou v [[#Nastavení]] aplikace. Obvykle se jedná o Ctrl + Y.
 
 Změny se projevují jak v textu, tak v ukazateli změn v levém dolním rohu hlavního okna.
 ![[PDO_edit_main.png]]
@@ -46,7 +51,6 @@ Aplikace neumožňuje přímou úpravu obrazu, ale můžete načíst nová obraz
 ![[PDO_load_im.png]]
 # Vyhledávání
 ---
-
 ## Vyhledávání v aktuálním záznamu
 Pro započetí vyhledávání můžete využít tlačítka Vyhledávání, nebo klávesové zkratky definované v [[#Nastavení|nastavení]]. Obvykle se jedná o Ctrl + R. V tomto okně si vyberte Aktuální záznam, do textového pole vepište text, který chcete hledat a stiskněte tlačítko Hledat.
 ![[PDO_search2.png]]
@@ -76,9 +80,9 @@ POZOR: Konfliktní klávesové zkratky vedou k neuložení nastavení.
 
 Příklad konfliktního nastavení:
 ![[PDO_sett_inv.png]]
-# Propojení s ElasticDB
+# Propojení s Elasticsearch databází
 ---
-Pro propojení s ElasticDB je potřeba pracovat s daty, která mají vyplněný ES_index, odkaz a přihlašovací údaje na ElasticSearch databázi a data načtena do této databáze.
+Pro propojení s Elasticsearch databází je potřeba pracovat s daty, která mají vyplněný ES_index, odkaz a přihlašovací údaje na ElasticSearch databázi a data načtena do této databáze.
 
 Propojit se lze při [[#Načtení dat při startu aplikace|načtení dat při startu aplikace]] nebo za běhu aplikace v [[#Nastavení|nastavení]]. Do pole URI vyplníte adresu ElasticDB se kterou chcete pracovat. Do pole Uživatel uživatelské jméno a do pole Heslo heslo uživatele pro práci s danou ElasticDB.
 
