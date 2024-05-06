@@ -62,12 +62,11 @@ Pro započetí vyhledávání můžete využít tlačítka Vyhledávání, nebo 
 ![[PDO_search2.png]]
 
 
-Tento typ vyhledávání otevře okno se všemi záznamy obsahující text. V tomto okně si můžete vybrat jaký záznam si chcete nechat zobrazit pomocí tlačítka Zobraz v textu. V hlavním okně aplikace se zobrazí vybraný záznam s nalezeným hledaným textem. Tento typ vyhledávání kontroluje všechny záznamy
+Tento typ vyhledávání otevře okno se všemi záznamy obsahující text. V tomto okně si můžete vybrat jaký záznam si chcete nechat zobrazit pomocí tlačítka Zobraz v textu. V hlavním okně aplikace se zobrazí vybraný záznam s nalezeným hledaným textem. Tento typ vyhledávání kontroluje všechny záznamy.
 ![[PDO_search4.png]]
 ## Vyhledávání v rejstřících
 Pro započetí vyhledávání můžete využít tlačítka Vyhledávání, nebo klávesové zkratky definované v [[#Nastavení|nastavení]]. Obvykle se jedná o Ctrl + R. V tomto okně si vyberte Všechny záznamy, do textového pole vepište text, který chcete hledat a stiskněte tlačítko Hledat.
 ![[PDO_search2.png]]
-
 
 Tento typ vyhledávání otevře okno se všemi záznamy obsahující text. V tomto okně si můžete vybrat jaký záznam si chcete nechat zobrazit pomocí tlačítka Zobraz v textu. V hlavním okně aplikace se zobrazí vybraný záznam s nalezeným hledaným textem. Tento typ vyhledávání kontroluje pouze soubory definované v [[#Struktura dat|JSON souboru]] jako Lookup_File.
 ![[PDO_search5.png]]
